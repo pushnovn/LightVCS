@@ -22,5 +22,25 @@ namespace LightVCS
         {
             InitializeComponent();
         }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            return;
+            var pos = Mouse.GetPosition(this);
+            if (pos.X > this.Left + this.Width)
+                this.Close();
+            if (pos.X < this.Left)
+                this.Close();
+            if (pos.Y > this.Top + this.Height)
+                this.Close();
+            if (pos.Y < this.Top)
+                this.Close();
+        }
+
+
+        private void Label_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -43,7 +43,7 @@ namespace LightVCS
         {
             Application.Current.Shutdown();
         }
-        private void Add_Click(object sender, RoutedEventArgs e)
+        private void ButtonAddNewRep_Click(object sender, RoutedEventArgs e)
         {
             NewRepWindow wind = new NewRepWindow();
             wind.Show();

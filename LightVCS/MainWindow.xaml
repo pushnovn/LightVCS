@@ -29,7 +29,10 @@
                         <RowDefinition Height="100*"></RowDefinition>
                     </Grid.RowDefinitions>
 
-                    <Button Margin="5" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="3" Width="50" Content="Add" Grid.RowSpan="2" Click="Add_Click"/>
+                    <Button Margin="5" VerticalAlignment="Top" 
+                            HorizontalAlignment="Left" Padding="3" 
+                            Width="50" Content="Add" Grid.RowSpan="2" 
+                            Click="ButtonAddNewRep_Click"/>
 
                     <ListBox Name="Repositories" Margin="5" Grid.Row="1">
                         <ListBox.ItemTemplate>
